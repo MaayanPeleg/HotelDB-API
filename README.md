@@ -2,7 +2,7 @@
 
 This project is an API for use with an abstract database that i created for use in a hotel.
 The ERD for this database is shown below:
-![alt text](https://i.imgur.com/NsGGJo6.png)
+<img src="https://i.imgur.com/NsGGJo6.png" width="100" height=auto/>
 
 To run the server in a dev environment, (NEVER IN PROD!) use:
 ```
