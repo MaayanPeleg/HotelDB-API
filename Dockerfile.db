@@ -1,11 +1,7 @@
-FROM python:alpine3.11
+FROM mysql:5.7
 
-WORKDIR /app
-#copy everythinh except .sql
-COPY . /app
+EXPOSE 3306
 
-RUN pip install -r requirements.txt
+ENV MYSQL_ROOT_PASSWORD ABC123
 
-EXPOSE 8000
-
-CMD ["gunicorn", "server:app", "-b", "0.0.0.0:8000"]
+ADD *.sql /docker-entrypoint-initdb.d/
