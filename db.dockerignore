@@ -1,5 +1,0 @@
-#ignore .sql files
-*.py
-*.md
-*.gitignore
-*.txt

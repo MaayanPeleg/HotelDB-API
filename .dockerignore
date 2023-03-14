@@ -1,4 +1,0 @@
-#ignore .sql files
-*.sql
-*.md
-*.gitignore
