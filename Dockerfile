@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 EXPOSE 8000
 
-CMD ["python", "server.py"]
+CMD ["gunicorn", "server:app", "-b", "0.0.0.0:8000"]
