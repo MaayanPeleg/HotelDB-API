@@ -1,11 +1,11 @@
-# run with "flask --app server run --debug"
-#In deployement use "gunicorn server:app -b 0.0.0.0:8000"
-import mysql.connector as mysql
-from flask import Flask
+# run with "flask --app server run --debug" or "python server.py"
+#In deployement use "gunicorn server:app -b 0.0.0.0:8000" 
+import mysql.connector as mysql #pip install mysql-connector-python
+from flask import Flask #pip install flask
 
 app = Flask(__name__)
 #This is the information to connect to the DB
-config = {
+config = { #change to your DB info
     'user': 'root',
     'password': 'ABC123',
     'host': 'localhost',
