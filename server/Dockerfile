@@ -4,7 +4,7 @@ WORKDIR /app
 #copy everythinh except .sql
 COPY *.py .
 
-COPY /requirements.txt .
+COPY *.txt .
 
 RUN pip install -r requirements.txt
 
