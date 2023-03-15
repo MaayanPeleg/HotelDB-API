@@ -2,9 +2,9 @@ FROM python:alpine3.11
 
 WORKDIR /app
 #copy everythinh except .sql
-COPY server/*.py .
+COPY *.py .
 
-COPY server/requirements.txt .
+COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
