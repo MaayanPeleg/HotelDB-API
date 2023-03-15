@@ -8,7 +8,7 @@ app = Flask(__name__)
 config = { #change to your DB info
     'user': 'root',
     'password': 'ABC123',
-    'host': 'localhost',
+    'host': '0.0.0.0',
     'database': 'Hotel'
 }
 
