@@ -33,8 +33,7 @@ jobs:
       with:
         push: true
         tags: maayanpeleg87/hotel-api:latest
-        file: /api/Dockerfile
-      
+        file: /server/Dockerfile
   build-db:
 
     runs-on: ubuntu-latest
