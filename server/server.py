@@ -2,13 +2,14 @@
 #In deployement use "gunicorn server:app -b 0.0.0.0:8000" 
 import mysql.connector as mysql #pip install mysql-connector-python
 from flask import Flask #pip install flask
+import os
 
 app = Flask(__name__)
 #This is the information to connect to the DB
 config = { #change to your DB info
     'user': 'root',
     'password': 'ABC123',
-    'host': '0.0.0.0',
+    'host': os.environ.get('DATABASE_URL'),
     'database': 'Hotel'
 }
 
