@@ -8,6 +8,6 @@ RUN pip install -r requirements.txt
 
 EXPOSE 8000
 
-ENV DATABASE_URL hotel_db
+ENV DATABASE_URL hotel-db
 
 CMD ["gunicorn", "server:app", "-b", "0.0.0.0:8000"]
