@@ -17,3 +17,7 @@ gunicorn server:app -b 0.0.0.0:8000
 
 Update: Now inculded the SQL files to create the MYSQL database, Also amend the information within the config dict to connect to your local MYSQL DB.
 
+##Building Images
+When you make a pull request to the main branch, GitHub actions pipline builds new images and pushes to a repo.
+
+##Running 
