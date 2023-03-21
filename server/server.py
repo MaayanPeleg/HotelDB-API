@@ -1,7 +1,7 @@
 # run with "flask --app server run --debug" or "python server.py"
 #In deployement use "gunicorn server:app -b 0.0.0.0:8000" 
 import mysql.connector as mysql 
-from flask import Flask 
+from flask import Flask
 import os
 
 app = Flask(__name__)
