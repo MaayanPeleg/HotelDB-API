@@ -46,7 +46,6 @@ def get_guestid(guestid):
 
     #send requested information
     return JSONout
-    
 
 @app.route('/guest/')
 def guest():
@@ -229,4 +228,3 @@ def index():
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8000)
-  
