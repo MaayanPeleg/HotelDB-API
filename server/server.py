@@ -1,7 +1,7 @@
 # run with "flask --app server run --debug" or "python server.py"
 #In deployement use "gunicorn server:app -b 0.0.0.0:8000" 
 import mysql.connector as mysql 
-from flask import Flask 
+from flask import Flask
 import os
 
 app = Flask(__name__)
@@ -46,7 +46,6 @@ def get_guestid(guestid):
 
     #send requested information
     return JSONout
-    
 
 @app.route('/guest/')
 def guest():
@@ -229,4 +228,3 @@ def index():
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8000)
-  
